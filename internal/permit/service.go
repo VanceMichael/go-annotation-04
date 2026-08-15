@@ -193,5 +193,5 @@ func decorate(action, id string, err error) error {
 	if err == nil {
 		return nil
 	}
-	return fmt.Errorf("permit: %s %s 失败: %v", action, id, err)
+	return fmt.Errorf("permit: %s %s 失败: %w", action, id, err)
 }
